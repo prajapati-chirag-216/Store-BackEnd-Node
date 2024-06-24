@@ -1,0 +1,53 @@
+[
+  {
+    "_id": {
+      "$oid": "658f1b4336d04b1995b7677e"
+    },
+    "name": "Prajapati Pratik",
+    "email": "pratik@gmail.com",
+    "password": "$2b$08$lJYCEp6Dn/s6ATFqXmQ3/.Woh5orbANcxssXrWyGqjUXNlz12m5KS",
+    "cartItems": [],
+    "createdAt": {
+      "$date": "2024-06-22T19:17:23.420Z"
+    },
+    "updatedAt": {
+      "$date": "2024-06-22T18:25:45.445Z"
+    },
+    "__v": 0
+  },
+  {
+    "_id": {
+      "$oid": "65f492c46e7d0b19d20c1abc"
+    },
+    "name": "chirag",
+    "email": "chirag@gmail.com",
+    "password": "$2b$08$c3jwPijHAoRgXXOXKrAAju7vO.g7OU7a/0C4YNNpU/kcQ5MSve9Z.",
+    "cartItems": [
+      {
+        "product": {
+          "$oid": "65871e799e7753644146785b"
+        },
+        "quantity": 2,
+        "_id": {
+          "$oid": "6610d42cd5589dcbb4cd9be7"
+        }
+      },
+      {
+        "product": {
+          "$oid": "6586b442646d4c15cf2a0e04"
+        },
+        "quantity": 1,
+        "_id": {
+          "$oid": "6610d42cd5589dcbb4cd9be8"
+        }
+      }
+    ],
+    "createdAt": {
+      "$date": "2024-06-22T18:26:12.459Z"
+    },
+    "updatedAt": {
+      "$date": "2024-06-22T04:48:44.675Z"
+    },
+    "__v": 0
+  }
+]

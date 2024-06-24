@@ -1,0 +1,50 @@
+[{
+  "_id": {
+    "$oid": "659188e8ebca10466334dc55"
+  },
+  "userId": {
+    "$oid": "658f1b4336d04b1995b7677e"
+  },
+  "contactInformation": {
+    "email": "jay@gmail.com",
+    "phoneNo": "1222-2211-11"
+  },
+  "shippingAddress": {
+    "country": "india",
+    "userName": "prajapati chirag",
+    "address": "c ratndeep socity isnpur",
+    "city": "ahmedabad",
+    "state": "gujrat",
+    "pinCode": "364762"
+  },
+  "shippingMethod": "Online",
+  "deliveryStatus": "Shipped",
+  "orderedItems": [
+    {
+      "productId": {
+        "$oid": "658720fdbc27bc23dd9822b8"
+      },
+      "quantity": 14,
+      "_id": {
+        "$oid": "659188e8ebca10466334dc56"
+      }
+    },
+    {
+      "productId": {
+        "$oid": "6586b442646d4c15cf2a0e04"
+      },
+      "quantity": 4,
+      "_id": {
+        "$oid": "659188e8ebca10466334dc57"
+      }
+    }
+  ],
+  "totalPrice": 9000,
+  "createdAt": {
+    "$date": "2023-12-31T15:29:44.320Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-16T06:23:28.168Z"
+  },
+  "__v": 0
+}]

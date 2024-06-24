@@ -1,0 +1,244 @@
+[
+  {
+    "_id": {
+      "$oid": "6586b442646d4c15cf2a0e04"
+    },
+    "name": "Fan",
+    "price": 150,
+    "description": "Keep your space cool and comfortable with this high-quality fan. Its powerful airflow and whisper-quiet operation make it a must-have for any room.",
+    "images": [
+      "https://images.unsplash.com/photo-1564510182791-29645da7fac4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://images.unsplash.com/photo-1565151443833-29bf2ba5dd8d?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
+    "createdAt": {
+      "$date": "2023-12-23T10:19:46.604Z"
+    },
+    "updatedAt": {
+      "$date": "2023-12-31T15:29:44.333Z"
+    },
+    "__v": 0,
+    "status": "Available",
+    "quantity": 41,
+    "isDeleted": false
+  },
+  {
+    "_id": {
+      "$oid": "6586b484646d4c15cf2a0e09"
+    },
+    "name": "Table",
+    "price": 200,
+    "description": "This sturdy table is perfect for any room. Its sleek design and durable construction make it ideal for dining, working, or displaying items.",
+    "images": [
+      "https://images.unsplash.com/photo-1594125674956-61a9b49c8ecc?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://plus.unsplash.com/premium_photo-1677220808756-0e66328115c8?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
+    "createdAt": {
+      "$date": "2023-12-23T10:20:52.528Z"
+    },
+    "updatedAt": {
+      "$date": "2023-12-23T10:20:52.528Z"
+    },
+    "__v": 0,
+    "status": "Available",
+    "quantity": 20,
+    "isDeleted": false
+  },
+  {
+    "_id": {
+      "$oid": "65871bcd9133d94d30484e0a"
+    },
+    "name": "Shoes",
+    "price": 1000,
+    "description": "These stylish and comfortable shoes are perfect for any occasion. Made from high-quality materials, they provide both durability and fashion.",
+    "images": [
+      "https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?q=80&w=1898&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://media.istockphoto.com/id/1325431385/photo/new-red-sneakers-on-a-yellow-background-casual-shoes-space-for-text.webp?s=170667a&w=0&k=20&c=QM2E3A7m_T5Xe_d82jsx8n-YdTvbb9LIFcscuVrQYnA="
+    ],
+    "createdAt": {
+      "$date": "2023-12-23T17:41:33.697Z"
+    },
+    "updatedAt": {
+      "$date": "2023-12-23T17:41:33.697Z"
+    },
+    "__v": 0,
+    "status": "Available",
+    "quantity": 40,
+    "isDeleted": false
+  },
+  {
+    "_id": {
+      "$oid": "65871d289133d94d30484e1e"
+    },
+    "name": "Air Conditioner",
+    "price": 150,
+    "description": "Stay cool and comfortable with this high-efficiency air conditioner. Perfect for hot summer days, it cools your space quickly and quietly.",
+    "images": [
+      "https://images.unsplash.com/photo-1436473849883-bb3464c23e93?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "https://media.istockphoto.com/id/1355163548/photo/air-purifier-a-room-air-cleaner-removing-fine-dust-in-house-protect-pm-2-5.webp?s=170667a&w=0&k=20&c=auicB2TVREXhwi8q_hx2piecWYVV75t5KZsgp05q1I4="
+    ],
+    "createdAt": {
+      "$date": "2023-12-23T17:47:20.694Z"
+    },
+    "updatedAt": {
+      "$date": "2023-12-30T13:32:22.593Z"
+    },
+    "__v": 0,
+    "status": "Available",
+    "quantity": 4,
+    "isDeleted": false
+  },
+  {
+    "_id": {
+      "$oid": "65871d599133d94d30484e23"
+    },
+    "name": "The Dragon's Pact",
+    "price": 200,
+    "description": "Delve into a thrilling fantasy world with 'The Dragon's Pact,' where loyalty and courage are tested in epic quests.",
+    "images": [
+      "https://res.cloudinary.com/dzpuekeql/image/upload/v1703353688/wuoe5wkhwaglupzncbt7.jpg",
+      "https://res.cloudinary.com/dzpuekeql/image/upload/v1703353690/t59bsw7xrhwvmd9nkzmb.jpg"
+    ],
+    "createdAt": {
+      "$date": "2023-12-23T17:48:09.799Z"
+    },
+    "updatedAt": {
+      "$date": "2023-12-30T13:32:22.593Z"
+    },
+    "__v": 0,
+    "status": "Not-Available",
+    "quantity": 8,
+    "isDeleted": false
+  },
+  {
+    "_id": {
+      "$oid": "65871d949133d94d30484e28"
+    },
+    "name": "Shadows of Deceit",
+    "price": 300,
+    "description": "Uncover the dark secrets of a city with 'Shadows of Deceit,' a gripping detective story full of twists and turns.",
+    "images": [
+      "https://res.cloudinary.com/dzpuekeql/image/upload/v1703353749/nlnuigga42iqa0zkj7m5.jpg",
+      "https://res.cloudinary.com/dzpuekeql/image/upload/v1703353745/w845rpvnxevrsm93zoox.jpg"
+    ],
+    "createdAt": {
+      "$date": "2023-12-23T17:49:08.528Z"
+    },
+    "updatedAt": {
+      "$date": "2023-12-31T07:36:04.541Z"
+    },
+    "__v": 0,
+    "status": "Available",
+    "quantity": 46,
+    "isDeleted": false
+  },
+  {
+    "_id": {
+      "$oid": "65871e389e77536441467856"
+    },
+    "name": "i Phone",
+    "price": 200,
+    "description": "Stay connected with this advanced smartphone. Featuring a sleek design and powerful features, it's perfect for everyday use.",
+    "images": [
+      "https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aSUyMHBob25lfGVufDB8fDB8fHww",
+      "https://images.unsplash.com/photo-1589492477829-5e65395b66cc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aSUyMHBob25lfGVufDB8fDB8fHww"
+    ],
+    "createdAt": {
+      "$date": "2023-12-23T17:51:52.182Z"
+    },
+    "updatedAt": {
+      "$date": "2023-12-25T10:34:19.051Z"
+    },
+    "__v": 0,
+    "status": "Available",
+    "quantity": 30,
+    "isDeleted": false
+  },
+  {
+    "_id": {
+      "$oid": "65871e799e7753644146785b"
+    },
+    "name": "School Bag",
+    "price": 400,
+    "description": "This durable school bag is perfect for students of all ages. With multiple compartments and a comfortable design, it makes carrying books and supplies easy.",
+    "images": [
+      "https://images.unsplash.com/photo-1622560480654-d96214fdc887?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c2Nob29sJTIwYmFnfGVufDB8fDB8fHww",
+      "https://media.istockphoto.com/id/1548577126/photo/backpack-luggage-travel-cut-out-isolated-white-background-with-clipping-path.webp?s=170667a&w=0&k=20&c=wRa6GbE9ZxFDaduJa7qbdQNdH9Agk17XoEBvUt6WiXw="
+    ],
+    "createdAt": {
+      "$date": "2023-12-23T17:52:57.156Z"
+    },
+    "updatedAt": {
+      "$date": "2023-12-31T14:30:33.686Z"
+    },
+    "__v": 0,
+    "status": "Available",
+    "quantity": 38,
+    "isDeleted": false
+  },
+  {
+    "_id": {
+      "$oid": "65871eb49e77536441467860"
+    },
+    "name": "Chair",
+    "price": 300,
+    "description": "This comfortable and stylish chair is perfect for any room. Whether you're working or relaxing, it offers excellent support and style.",
+    "images": [
+      "https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2hhaXJ8ZW58MHx8MHx8fDA%3D",
+      "https://images.unsplash.com/photo-1609103131880-c541ea179cd2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDEwfHx8ZW58MHx8fHx8"
+    ],
+    "createdAt": {
+      "$date": "2023-12-23T17:53:56.067Z"
+    },
+    "updatedAt": {
+      "$date": "2023-12-23T17:53:56.067Z"
+    },
+    "__v": 0,
+    "status": "Available",
+    "quantity": 10,
+    "isDeleted": false
+  },
+  {
+    "_id": {
+      "$oid": "658720fdbc27bc23dd9822b8"
+    },
+    "name": "Fridge",
+    "price": 600,
+    "description": "Keep your food fresh with this spacious and energy-efficient fridge. Its modern design and advanced features make it a great addition to any kitchen.",
+    "images": [
+      "https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZnJpZGdlfGVufDB8fDB8fHww  ",
+      "https://plus.unsplash.com/premium_photo-1664455687807-87e8194a8f29?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZnJpZGdlfGVufDB8fDB8fHww"
+    ],
+    "createdAt": {
+      "$date": "2023-12-23T18:03:41.435Z"
+    },
+    "updatedAt": {
+      "$date": "2023-12-31T15:29:44.333Z"
+    },
+    "__v": 0,
+    "status": "Available",
+    "quantity": 34,
+    "isDeleted": false
+  },
+  {
+    "_id": {
+      "$oid": "658721abbc27bc23dd9822bd"
+    },
+    "name": "T-Shirt",
+    "price": 150,
+    "description": "Comfort meets style with this versatile t-shirt. Perfect for casual wear, it's made from soft, breathable fabric to keep you comfortable all day.",
+    "images": [
+      "https://images.unsplash.com/photo-1562157873-818bc0726f68?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8dCUyMHNoaXJ0fGVufDB8fDB8fHww",
+      "https://media.istockphoto.com/id/1155019205/photo/colorful-of-cotton-t-shirt-on-wooden-background.webp?s=170667a&w=0&k=20&c=3uTbiUKLXrUoXMvjf5Ld7_cofs37kVoz1YegNKfTf7E="
+    ],
+    "createdAt": {
+      "$date": "2023-12-23T18:06:35.785Z"
+    },
+    "updatedAt": {
+      "$date": "2023-12-23T18:06:35.785Z"
+    },
+    "__v": 0,
+    "status": "Not-Available",
+    "quantity": 10,
+    "isDeleted": false
+  }
+]
