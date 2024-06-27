@@ -7,17 +7,11 @@ const router = express.Router();
 router.get("/getproduct/:id", catchAsync(ProductController.getProductHandler));
 
 router.get(
-  "/getAllproducts",
+  "/getAllProducts",
   catchAsync(ProductController.getAllProductsHandler)
 );
-
 router.get(
-  "/searchProduct/:name",
-  catchAsync(ProductController.searchProductHandler)
-);
-
-router.get(
-  "/getfilteredproducts/:id/:name",
+  "/getfilteredproducts/:window/:skip/:sortBy/:searchTxt",
   catchAsync(ProductController.getFilteredProductsHandler)
 );
 

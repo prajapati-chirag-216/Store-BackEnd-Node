@@ -2,9 +2,7 @@ const Product = require("../model/product.modal");
 
 const ProductServices = {
   async getAllProductsHandler() {
-    const data = await Product.find({ isDeleted: false })
-      .sort({ createdAt: 1 })
-      .select({ __v: 0 });
+    const data = await Product.find({ isDeleted: false }).select({ __v: 0 });
     return data;
   },
 
@@ -12,7 +10,32 @@ const ProductServices = {
     const searchNameWithoutSpaces = searchName.replace(/\s/g, "");
     const data = await Product.find({
       name: new RegExp(searchNameWithoutSpaces.split("").join(".*"), "i"),
+      isDeleted: false,
     });
+    return data;
+  },
+
+  // sorting products with applied search and filter
+  async sortProductWithSearchHandler(
+    windowSize,
+    skipRecords,
+    searchTxt,
+    sortBy
+  ) {
+    if (searchTxt !== "all") {
+      const searchResults = await this.searchProductHandler(searchTxt);
+      const data = await Product.find({
+        _id: { $in: searchResults.map((product) => product._id) },
+      })
+        .sort(sortBy)
+        .skip(skipRecords)
+        .limit(windowSize + 1);
+      return data;
+    }
+    const data = await Product.find({ isDeleted: false })
+      .sort(sortBy)
+      .skip(skipRecords)
+      .limit(windowSize + 1);
     return data;
   },
 
@@ -22,30 +45,44 @@ const ProductServices = {
     return data;
   },
 
-  async getFilteredProductsHandler(id, name) {
+  async getFilteredProductsHandler(windowSize, skipRecords, sortBy, searchTxt) {
     let data;
-    if (name === "sortByHighPrice") {
-      data = await Product.find({ isDeleted: false }).sort({
-        price: -1,
-      });
-    } else if (name === "sortByLowPrice") {
-      data = await Product.find({ isDeleted: false }).sort({
-        price: 1,
-      });
-    } else if (name === "sortByNewDate") {
-      data = await Product.find({ isDeleted: false }).sort({
-        createdAt: -1,
-      });
-    } else if (name === "sortByOldDate") {
-      data = await Product.find({ isDeleted: false }).sort({
-        createdAt: 1,
-      });
+    if (sortBy === "sortByHighPrice") {
+      data = await this.sortProductWithSearchHandler(
+        windowSize,
+        skipRecords,
+        searchTxt,
+        { price: -1 }
+      );
+    } else if (sortBy === "sortByLowPrice") {
+      data = await this.sortProductWithSearchHandler(
+        windowSize,
+        skipRecords,
+        searchTxt,
+        { price: 1 }
+      );
+    } else if (sortBy === "sortByNewDate") {
+      data = await this.sortProductWithSearchHandler(
+        windowSize,
+        skipRecords,
+        searchTxt,
+        { createdAt: -1 }
+      );
+    } else if (sortBy === "sortByOldDate") {
+      data = await this.sortProductWithSearchHandler(
+        windowSize,
+        skipRecords,
+        searchTxt,
+        { createdAt: 1 }
+      );
     }
-
     if (!data) {
       throw { message: "Somthing went wrong!" };
     }
-    return data;
+    if (data.length > windowSize) {
+      return { products: data.slice(0, windowSize), haveMore: true };
+    }
+    return { products: data, haveMore: false };
   },
 
   async checkProductsQuantityHandler(productData) {

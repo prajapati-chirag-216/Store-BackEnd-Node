@@ -17,12 +17,16 @@ const ProductController = {
   },
 
   async getFilteredProductsHandler(req, res) {
-    const string = req.params.name;
-    const catId = req.params.id;
+    const windowSize = req.params?.window || 10;
+    const skip = (req.params?.skip || 0) * windowSize;
+    const sortBy = req.params?.sortBy || "sortByNewDate";
+    const searchTxt = req.params?.searchTxt || "all";
 
     const data = await ProductServices.getFilteredProductsHandler(
-      catId,
-      string
+      windowSize,
+      skip,
+      sortBy,
+      searchTxt
     );
     res.status(200).send(data);
   },
